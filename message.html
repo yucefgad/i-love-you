@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>For Mimi</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+  }
+
+  /* floating hearts */
+  .heart {
+    position: absolute;
+    animation: floatUp 6s linear infinite;
+    opacity: 0.85;
+  }
+
+  @keyframes floatUp {
+    from {transform: translateY(100vh) scale(0.8); opacity: 0.85;}
+    to {transform: translateY(-10vh) scale(1.2); opacity: 0;}
+  }
+.message {
+position:relative;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 7px;
+  padding: 20px;
+  width: 80%;
+  max-width: 1000px;
+  max-height: 70vh;
+  overflow-y: auto;         /* only scroll up & down */
+  overflow-x: hidden;       /* stop side-to-side scrolling */
+  margin: 0 auto;           /* center the box */
+  text-align: center;
+  color: #ffb6c1;
+  font-size: 20px;
+  line-height: 1.6;
+  font-family: 'Dancing Script', cursive;
+  box-shadow: 0 0 30px rgba(255, 182, 193, 0.6);
+  animation: glow 2s ease-in-out infinite alternate;
+  display: block;
+}
+
+
+.message-text {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 700px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.message-text p {
+  max-width: 60%;     /* limits line length for readability */
+  margin: 10px auto;    /* space between paragraphs and center them */
+  line-height: 1.6;     /* makes lines easy to read */
+}
+
+
+.timer {
+  font-size: 18px;
+  color: #ffd700;
+  font-weight: bold;
+  margin-bottom: 15px;
+  flex-shrink: 0; /* keeps timer visible at top */
+}
+
+  @keyframes glow {
+    from { box-shadow: 0 0 20px rgba(255, 182, 193, 0.5); }
+    to { box-shadow: 0 0 35px rgba(255, 182, 193, 0.9); }
+  }
+
+
+.media-gallery {
+  display: flex;               /* switch from grid to flex for easier alignment */
+  flex-wrap: wrap;             /* allows items to wrap if needed */
+  justify-content: flex-end;   /* align gallery to the right */
+  gap: 15px;                   /* space between items */
+  margin-top: 20px;
+  width: 100%;
+}
+
+.media-slot {
+  position: absolute;      
+  width: 120px;
+  height: 120px;
+  border: 2px solid #ffb6c1;       /* pink border */
+  border-radius: 5px;               /* rounded edges */
+  box-shadow: 0 0 10px rgba(255,182,193,0.6); /* glow */
+  overflow: hidden;                 /* ensures border wraps image/video */
+  display: inline-block;
+}
+
+/* make sure img/video fills the slot */
+.media-slot img,
+.media-slot video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* cover ensures it fills slot without stretching */
+  display: block;
+}
+
+  /* scrollbar styling for the box */
+  .message::-webkit-scrollbar {
+    width: 8px;
+  }
+  .message::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.2);
+  }
+  .message::-webkit-scrollbar-thumb {
+    background: #ffb6c1;
+    border-radius: 4px;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="message">
+  <!-- timer at the top -->
+  <div class="timer">
+    I've loved you for: <span id="countdown"></span>
+  </div>
+
+
+  <!-- your long paragraph -->
+  <div class="message-text">
+    <p>Menna</p>
+
+    <p>hey ya rohi look i wanna start off by saying im rlly sorry 
+for hurting u baby ik how much that hurt you n how it made u feel 
+ik i made u cry and rlly hurt u n i hate that i did that n caused 
+that to you, enti rohi ya menna n u rlly deserve the whole world w 
+law 3alaya id do everything to make sure ur pleased and happy id 
+marry u tdy n never have u worrying abt anything id make u live like
+ a queen like queen M cuz thats what u deserve ya 3omry i wanna 
+please u n see u smile id do anything just to keep that smile on 
+ur face n always keep u happy and hear ur cute evil laugh n ur 
+jokes ha2ek 3alaya ya rohi ik i fucked up and i promise you baby 
+ill never keep on doing anything that hurts u idc what happens im 
+never gonna hurt u or let anything hurt you ill always do everything 
+i can to protect n make sure ur comfortable safe n happy i rlly promise 
+u baby and trust me im gonna do everything i promised u to do ana 
+bahebekk awiii ya menna w bamoot fikii w ba3sha2ek i love everything 
+abt you baby and i rlly appreciate everything you’ve done for me the 
+times you helped me w math u made me understand smmm and helped me u 
+always helped me w everything especially me you made me find myself 
+what i love and who i rlly am you changed me soo muchh u taught  me 
+respect n patience u made me understanding ur the reason im this mature 
+and i am who i am tdy u showed me everything u helped me w soo muchh 
+stuff and my feelings u cared for me u were patient w me u showed me 
+affection u showed me care you made me feel special even when u were 
+going through soo much and stressed out abt ur family and school u 
+showed me what its like to be loved by the best person in the world 
+you’ve done sooo muchhhh for me ya rohii and i couldn’t be more grateful 
+for you and everything you’ve done for me and us yk id come at random
+ times n just remember convos we had and how happy u made me through 
+the bs I’m going through and how much u made me smile id remember your 
+sweet words and id smile soo hard it would genuinely make me happy ydk 
+what every single thing you’ve done for me small or big means to me i 
+wish you could see yourself from my eyes you’d see how great you are 
+how much i love you care for you and how much i appreciate you you’d 
+see the hope i have for you that i never even had for myself you’d see
+ how perfect everything abt you is how unique and special everything abt
+ you is from ur looks to ur personality to ur soul to who u are as a 
+person menna ur the best person any guy could every wish for but they 
+gotta wish somewhere else now cuz ur mine and im never letting u go 
+meeting you and falling in love w you was the best thing that’s ever 
+happened to me baby and im sooo grateful and thankful i have someone 
+like you that’s by my side ik for a fact you’re gonna be the best mom 
+and wife ever our kids gonna be soo lucky they have a mom like you and 
+im already the luckiest person ever to have you, theres stuff abt you i 
+can’t describe it’s js soo beautiful and meaningful to me there’s js so 
+much stuff i love abt u i cant keep count of them ur js soooo idk how to
+ even say it im js soo lucky and blessed to have u as my gf as my first 
+everything my first love my first kiss my first hug everything ik soo 
+happy that ur my first in everything god knows how much i love you how 
+thankful and grateful i am for you how blessed i am for you ik i promised 
+you bes ill promise you again ill always try my hardest and best for you 
+to keep u happy n pleased ya rohi cuz there’s nthn i want more than to show
+ u love care n pleasure and to always keep u smiling i want you to know that 
+ill always love you no matter what happens ill never forget everything youve
+ done for me the nights we had together the memories we have and i rlly hope
+ and want to create more gorgeous memories w you pleasing you and making sure 
+ur happy ill always be here for you baby i want you to live everyday knowing 
+there’s someone out here that loves you n cares for you more than hes ever 
+loved n cared for anything before i loveee youuuu soooooo muchhhh ya 3omryy
+ entiii im rlly sorry for hurting you baby and i promise u everything that 
+ive told u id do ill do it ya rohi cuz i love you and id do anything for you baby 
+بحبك يا روحي</p>
+  </div>
+
+
+<div class="media-gallery"> 
+<div class="media-slot" style="top: 400px; right: 90px; width: 175px; height: 190px;">
+ <img src="babymimi1.jpg" alt="photo1">
+</div>
+  <div class="media-slot" style="top: 700px; left: 120px; width: 150px; height: 250px;">
+    <video src="mimi nails.mp4" autoplay loop muted playsinline></video>
+  </div>
+  <div class="media-slot" style="top: 310px; left: 100px; width: 200px; height: 200px;">
+    <img src="babymimi2.jpg" alt="photo2">
+  </div>
+  <div class="media-slot" style="top: 1350px; left: 90px; width: 175px; height: 270px;">
+    <video src="us.mp4" autoplay loop muted playsinline></video>
+  </div>
+  <div class="media-slot" style="top: 2122px; right: 70px; width: 200px; height: 260px;">
+    <img src="M&Y.jpg" alt="photo3">
+  </div>
+  <div class="media-slot" style="top: 50px; right: 20px; width: 230px; height: 210px;">
+    <img src="mimi&mini_mimi.jpg" alt="photo4">
+  </div>
+<div class="media-slot" style="top: 770px; right: 100px; width: 150px; height: 200px;">
+    <img src="ro7i.jpg"  alt="photo4">
+  </div>
+<div class="media-slot" style="top: 2000px; left: 120px; width: 180px; height: 180px;">
+  <img src="cute mimi.jpg" alt="new photo 1">
+</div>
+
+<div class="media-slot" style="top: 100px; left: 150px; width: 120px; height: 120px;">
+  <img src="frog mimi.jpg" alt="new photo 2">
+</div>
+<!-- existing media slots above -->
+
+<div class="media-slot" style="top: 1500px; right: 110px; width: 170px; height: 270px;">
+  <img src="outfit.jpg" alt="new photo 3">
+</div>
+
+<div class="media-slot" style="top: 1000px; right: 135px; width: 155px; height: 155px;">
+  <img src="beach mimi.jpg" alt="new photo 4">
+</div>
+</div>
+
+
+  <!-- photo gallery -->
+  <div class="photo-gallery">
+    <img src="photo1.jpg" alt="photo1">
+    <img src="photo2.jpg" alt="photo2">
+    <img src="photo3.jpg" alt="photo3">
+  </div>
+</div>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // floating hearts
+  const colors = ['#ffb6c1', '#ffafc1', '#ffc0cb'];
+  for (let i = 0; i < 25; i++) {
+    const heart = document.createElement('div');
+    heart.innerHTML = '❤';
+    heart.classList.add('heart');
+    heart.style.left = Math.random() * 100 + 'vw';
+    heart.style.animationDuration = 4 + Math.random() * 4 + 's';
+    heart.style.fontSize = 14 + Math.random() * 20 + 'px';
+    heart.style.color = colors[Math.floor(Math.random() * colors.length)];
+    document.body.appendChild(heart);
+  }
+
+  // timer
+  const startDate = new Date("May 7, 2024 00:24:00").getTime();
+  const countdownElement = document.getElementById("countdown");
+
+  function updateTimer() {
+    const now = new Date().getTime();
+    let diff = now - startDate;
+
+    if (diff < 0) {
+      countdownElement.innerHTML = "Counting down...";
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000*60*60));
+    const minutes = Math.floor((diff % (1000*60*60)) / (1000*60));
+    const seconds = Math.floor((diff % (1000*60)) / 1000);
+
+    countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+  }
+
+  setInterval(updateTimer, 1000);
+  updateTimer();
+});
+</script>
+</body>
+</html>
